@@ -1,0 +1,95 @@
+// --------------------------------------------- //
+// -- Header Slider
+// --------------------------------------------- //
+
+.header-slider{
+	padding: 7px 0;
+	img{
+		padding: 7px;
+		height: auto !important;
+		max-width: 100%;
+	}
+/*
+	.hs-content{
+		position: relative;
+		z-index: 2;
+		top: 50%;
+		transform: translate(0%, -50%);
+		.columns{
+			text-align: center;
+		}
+	}
+*/
+}
+
+
+// --------------------------------------------- //
+// -- Background Image
+// --------------------------------------------- //
+
+.vc-bg-img {
+		background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+// --------------------------------------------- //
+// -- Image Text
+// --------------------------------------------- //
+.image_text{
+	position: relative;
+	display: block;
+	.it_img{
+		width: 100%;
+	}
+	.it_container{
+		position:absolute;
+		top:0;
+		width:100%;
+		height:100%;
+		> .inner{
+			color:#fff;
+			position: relative;
+			top: 50%;
+	    -webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);			
+		}
+	}
+}
+
+// --------------------------------------------- //
+// -- Slick Carousel
+// --------------------------------------------- //
+
+.custom-carousel{
+	display: none;
+	.custom-carousel-item{
+		.wpb_content_element{
+			margin-bottom: 0px;
+		}
+		.vc_row {
+			margin-left: 0;
+    	margin-right: 0;
+		}
+		.vc_row > .vc_column_container > .vc_column-inner{
+			//padding: 0px !important;
+		}
+	}
+}
+
+// --------------------------------------------- //
+// -- Expandable Element
+// --------------------------------------------- //
+
+.expandable-element{
+	.ee-image {
+    float: right;
+    width: 44%;
+    min-width: 180px;
+    margin-left: 0;
+	}
+}

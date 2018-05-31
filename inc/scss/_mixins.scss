@@ -1,0 +1,55 @@
+@mixin rounded($radius: 0.3em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin vertical-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@mixin vertical-bottom {
+  position: relative;
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+@mixin transitions {
+  -webkit-transition: all .5s ease 0s;
+     -moz-transition: all 0.5s ease 0s;
+       -o-transition: all 0.5s ease 0s;
+      -ms-transition: all 0.5s ease 0s;
+          transition: all 0.5s ease 0s;
+}
+@mixin tilt {
+  transform: scale(1.55,1.55) rotate(-20deg);
+  -webkit-transform: scale(1.55,1.55) rotate(-20deg);
+  -moz-transform: scale(1.55,1.55) rotate(-20deg);
+  -ms-transform: scale(1.55,1.55) rotate(-20deg);
+  -o-transform: scale(1.55,1.55) rotate(-20deg);
+}
+@mixin zoom {
+  -webkit-transform: scale3d(1.1,1.1,1);
+     -moz-transform: scale3d(1.1,1.1,1);
+       -o-transform: scale3d(1.1,1.1,1);
+      -ms-transform: scale3d(1.1,1.1,1);
+          transform: scale3d(1.1,1.1,1);
+}
+@mixin zoom-half {
+  -webkit-transform: scale3d(.5,.5,1);
+     -moz-transform: scale3d(.5,.5,1);
+       -o-transform: scale3d(.5,.5,1);
+      -ms-transform: scale3d(.5,.5,1);
+          transform: scale3d(.5,.5,1);
+}
+@mixin zoom-normal {
+  -webkit-transform: scale3d(1,1,1);
+     -moz-transform: scale3d(1,1,1);
+       -o-transform: scale3d(1,1,1);
+      -ms-transform: scale3d(1,1,1);
+          transform: scale3d(1,1,1);
+}
